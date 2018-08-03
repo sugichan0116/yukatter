@@ -1,0 +1,102 @@
+{
+  "keyword": {
+    "OR": " ゆかり OR 結月 OR ゆかりさん ",
+    "NOT": " -田村 -水本 -石井 -田口 -彩華 -里奈 -羽生 ",
+    "MIN": " min_faves:10 ",
+    "FILTER": " filter:images exclude:retweets ",
+    "DAY": 30
+  },
+  "count": 100,
+  "text": [
+    {
+      "word": "結月",
+      "point": 100
+    },
+    {
+      "word": "ゆかりさん",
+      "point": 100
+    },
+    {
+      "word": "ゆかりん",
+      "point": 50
+    },
+    {
+      "word": "ゆかり",
+      "point": 20
+    },
+    {
+      "word": "ボイロ",
+      "point": 50
+    },
+    {
+      "word": "ボイスロイド",
+      "point": 20
+    },
+    {
+      "word": "描",
+      "point": 20
+    },
+    {
+      "word": "お題",
+      "point": 20
+    },
+    {
+      "word": "進捗",
+      "point": 20
+    },
+    {
+      "word": "絵",
+      "point": 20
+    },
+    {
+      "word": "王国",
+      "point": -20
+    }
+  ],
+  "bio": [
+    {
+      "word": "結月",
+      "point": 500
+    },
+    {
+      "word": "漫画",
+      "point": 200
+    },
+    {
+      "word": "絵",
+      "point": 200
+    },
+    {
+      "word": "ボイスロイド",
+      "point": 200
+    },
+    {
+      "word": "ボカロ",
+      "point": 200
+    },
+    {
+      "word": "ボイロ",
+      "point": 200
+    },
+    {
+      "word": "描",
+      "point": 200
+    },
+    {
+      "word": "絵かき",
+      "point": 200
+    },
+    {
+      "word": "らくがき",
+      "point": 200
+    },
+    {
+      "word": "落書き",
+      "point": 200
+    },
+    {
+      "word": "王国",
+      "point": -200
+    }
+  ]
+}
