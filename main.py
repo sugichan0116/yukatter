@@ -38,8 +38,8 @@ def sendQuery():
     keyword = setting["keyword"]
 
     date = datetime.now(timezone.utc) - timedelta(days=keyword["DAY"])
-    since = timeParse(date)
-    until = timeParse(date + timedelta(days=1))
+    since = timeParse(date) + "_00:00:00_JST"
+    until = timeParse(date + timedelta(days=0)) + "_23:59:59_JST"
 
     print("since:" + since)
     print("until:" + until)
@@ -75,6 +75,7 @@ def sendQuery():
             None,
             **system["keys"]
         )
+        print(r)
         content = r["statuses"]
         print(len(content))
         if len(content) == 0:
@@ -140,10 +141,11 @@ def writePage(images):
     print("write web page");
     html = ""
     container = ""
-    text = system["log"]
+    setting = system["setting"]
+    text = str(setting["min-score"]) + "/" + str(setting["count"])
 
     for image in images:
-        if image["score"] < system["setting"]["min-score"]:
+        if image["score"] < setting["min-score"]:
             continue
         # time = datetime.datetime.now() - datetime.datetime.strptime(image["time"], '%a %m %d %H:%M:%S %Z %Y')
         time = datetime.now(timezone.utc) - parser.parse(image["time"])

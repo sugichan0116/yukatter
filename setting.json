@@ -4,11 +4,11 @@
     "NOT": " -田村 -水本 -石井 -田口 -彩華 -里奈 -羽生 -やくも -八雲",
     "MIN": " min_faves:10 ",
     "FILTER": " filter:images exclude:retweets ",
-    "DAY": 0
+    "DAY": 1
   },
   "min-score":100,
-  "count": 1,
-  "time-pickup":20000,
+  "count": 10,
+  "time-pickup":3000,
   "text": [
     {
       "word": "結月",
